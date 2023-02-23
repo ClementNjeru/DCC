@@ -3,10 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
 
 function CollapsibleExample() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="">
+    <Navbar collapseOnSelect expand="lg" bg="" variant="">
       <Container className='container1'>
         <Navbar.Brand href="#home"><img
               src="favicon.ico"
@@ -19,8 +20,8 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features" >Home</Nav.Link>
-            <Nav.Link href="#pricing">About Us</Nav.Link>
+            <Nav.Link  as={Link} to={"/"}>Home</Nav.Link>
+            <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link>
             <Nav.Link href="#pricing">Ministries</Nav.Link>
             <Nav.Link href="#pricing">Prayer</Nav.Link>
             <Nav.Link href="#pricing">Donate</Nav.Link>
