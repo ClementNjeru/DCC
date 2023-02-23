@@ -22,20 +22,20 @@ function CollapsibleExample() {
           <Nav className="me-auto">
             <Nav.Link  as={Link} to={"/"}>Home</Nav.Link>
             <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link>
-            <Nav.Link href="#pricing">Ministries</Nav.Link>
-            <Nav.Link href="#pricing">Prayer</Nav.Link>
-            <Nav.Link href="#pricing">Donate</Nav.Link>
+            <Nav.Link as={Link} to={"/ministries"}>Ministries</Nav.Link>
+            <Nav.Link as={Link} to={"/prayer"}>Prayer</Nav.Link>
+            <Nav.Link as={Link} to={"/giving"}>Donate</Nav.Link>
             <NavDropdown title="More" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item as={Link} to={"/blogs"}>Blogs</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={"/media"}>
                 Media
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Calender</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={"/calender"}>Calender</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav className='navL'>
-            <Nav.Link href="#deets">Media</Nav.Link>
-            <Nav.Link href="#memes">
+            <Nav.Link as={Link} to={"/media"}>Media</Nav.Link>
+            <Nav.Link as={Link} to={"/contact"}>
             Contact Us
             </Nav.Link>
           </Nav>
