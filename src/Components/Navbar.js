@@ -11,8 +11,8 @@ function CollapsibleExample() {
       <Container className='container1'>
         <Navbar.Brand href="#home"><img
               src="favicon.ico"
-              width="100"
-              height="100"
+              width="50"
+              height="50"
               radius="5"
               className="d-inline-block align-top"
               alt=" DCC logo"
