@@ -11,6 +11,9 @@ import Contact from './Components/Contact'
 import Blogs from './Components/Blogs'
 import Media from './Components/Media'
 import Calender from './Components/Calender'
+import Vision from './Components/Vision'
+import Doctrine from './Components/Doctrine'
+import Leadership from './Components/Leadership'
 
 
 
@@ -21,6 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About/>}></Route>
+          <Route path="/leadership" element={<Leadership/>}></Route>
+          <Route path="/doctrine" element={<Doctrine/>}></Route>
+          <Route path="/vision" element={<Vision/>}></Route>
           <Route path="/ministries" element={<Ministries/>}></Route>
           <Route path="/prayer" element={<Prayer/>}></Route>
           <Route path="/Giving" element={<Giving/>}></Route>

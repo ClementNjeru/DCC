@@ -33,3 +33,19 @@
   height: 580px;
   width: 100%;
 }
+.led{
+  margin: 20px;
+  background-color: rgb(226, 230, 225);
+}
+.one{
+  display: flex;
+  gap: 10px;
+}
+.text1{
+  width: 100%;
+  border:  rgb(247, 240, 240) solid;
+  /* height: 450px; */
+  padding-left: 40px;
+  border-radius:0px 100px 0px 100px;;
+background-color: rgb(247, 241, 235);
+}

@@ -21,7 +21,17 @@ function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link  as={Link} to={"/"}>Home</Nav.Link>
-            <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link>
+            {/* <Nav.Link as={Link} to={"/about"}>About Us</Nav.Link> */}
+
+            <NavDropdown title="About Us" id="collasible-nav-dropdown">
+              <NavDropdown.Item as={Link} to={"/leadership"}>Leadership</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={"/doctrine"}>
+                Our Doctrine and Beliefs
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to={"/vision"}>Vision, Purpose, Core Values and History</NavDropdown.Item>
+            </NavDropdown>
+
+
             <Nav.Link as={Link} to={"/ministries"}>Ministries</Nav.Link>
             <Nav.Link as={Link} to={"/prayer"}>Prayer</Nav.Link>
             <Nav.Link as={Link} to={"/giving"}>Donate</Nav.Link>
