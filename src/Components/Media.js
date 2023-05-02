@@ -59,7 +59,11 @@ function Media() {
     <div className="image-container">
       {images.map((image, index) => (
         <img key={index} src={image.src} alt={image.alt} />
+
       ))}
+      <div className="image-overlay">
+        <div className="image-overlay-text">Hover text</div>
+      </div>
     </div>
   );
 }
