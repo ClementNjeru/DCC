@@ -8,6 +8,11 @@ const DonationForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Code to handle form submission
+    console.log(`Donation form submitted by ${name} with email ${email} for amount $${amount}`);
+    // Add code here to submit data to your payment gateway
+    setName("");
+    setEmail("");
+    setAmount("");
   };
 
   return (
